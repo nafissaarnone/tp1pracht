@@ -1,0 +1,28 @@
+[
+    {
+        "nom": "testJSON",
+        "prix": 34,
+        "favori": true,
+        "txt": "produit de test",
+        "bath": 2,
+        "nbsize": "test m²",
+        "img": "/public/card.jpg"
+    },
+    {
+        "nom": "test2",
+        "prix": 27,
+        "favori": false,
+        "txt": "2ème produit de test",
+        "bath": 2,
+        "nbsize": "test*2 m²",
+        "img": "/public/card.jpg"
+    },
+    {
+        "nom": "Dernier test",
+        "prix": 86,
+        "txt": "Dernier produit de test",
+        "bath": 1,
+        "nbsize": "test m²",
+        "img": "/public/card.jpg"
+    }
+]

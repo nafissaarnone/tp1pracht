@@ -22,6 +22,14 @@
           lien vers
           <code class="font-mono">page liste</code>
         </router-link>
+
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/listefech">
+          lien vers
+          <code class="font-mono">page liste fech</code>
+        </router-link>
+
       </li>
     </ul>
   </nav>

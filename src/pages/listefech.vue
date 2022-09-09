@@ -10,17 +10,12 @@ const maison = {
 </script>
 <template>
     <div>
-        <Card nom="maison untel" :prix="800" image="maison-2.jpg" />
+        <Card nom="maison untel" :prix="800" image="maison4.jpeg" />
         <!--<Card v-bind:prix="maison.prix" />-->
 
     </div>
     <div>
-        <Card nom="maison untel" :prix="5" image="maison-1.jpg" />
-        <!--<Card v-bind:prix="maison.prix" />-->
-
-    </div>
-    <div>
-        <Card nom="maison untel" :prix="5" image="maison-1.jpg" />
+        <Card nom="maison untel" :prix="5" image="maison5.jpeg" />
         <!--<Card v-bind:prix="maison.prix" />-->
 
     </div>

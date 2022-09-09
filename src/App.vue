@@ -37,6 +37,10 @@
   <!-- Affiche les pages -->
   <router-view class="m-2 border-2 p-2" />
 
+  <Suspense>
+    <router-view class="m-2 border-2 p-2" />
+  </Suspense>
+
 
 </template>
 

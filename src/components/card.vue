@@ -2,7 +2,8 @@
 import bed from './icones/bath.vue'
 import bath from './icones/bed.vue'
 import size from './icones/size.vue'
-import heart from './icones/heart.vue'
+import heart from './icones/heart.vue';
+
 defineProps({
     nom: String,
     prix: Number,
@@ -21,7 +22,7 @@ defineProps({
             <address class="not-italic text-gray-500">{{ nom }}</address>
             <div class="order-first flex items-center">
                 <div class="text-2xl text-indigo-500">
-                    ${{ prix.toLocaleString("en-US") }}
+                    ${{ prix?.toLocaleString("en-US") }}
                 </div>
                 <div class="text-gray-500">/mois</div>
             </div>

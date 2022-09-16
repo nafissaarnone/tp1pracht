@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "@vue/reactivity";
-import FicheOffreMaison from "./FormulaireOffreMaison.vue";
+import Card from "./card.vue";
 // On fait une variable réactive qui réference les données
 // ATTENTION : faire une Ref pas une Réactive car :
 // c'est l'objet qui doit être réactif, pas ses props
@@ -11,7 +11,7 @@ const maison = ref({});
         <div class="p-2">
             <h2 class="text-2xl">Résultat (Prévisualisation)</h2>
             <!--Optionnel on affiche les données -->
-            <FormulaireOffreMaison v-bind="maison" />
+            <Card v-bind="maison" />
         </div>
         <div class="p-2">
             <!-- On passe la "ref" à Formkit -->

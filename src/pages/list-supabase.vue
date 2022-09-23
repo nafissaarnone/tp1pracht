@@ -1,22 +1,5 @@
-<script setup lang="ts">
-import Card from "../components/card.vue";
+import  { createClient} from@supabase/supabase-js
 
-const maison = {
-    nom: "maison untel",
-    prix: 5,
-
-}
-
-</script>
-<template>
-    <div>
-        <Card nom="maison untel" :prix="800" image="maison4.jpeg" />
-        <Card v-bind:prix="maison.prix" />
-
-    </div>
-    <div>
-        <Card nom="maison untel" :prix="5" image="maison5.jpeg" />
-        <Card v-bind:prix="maison.prix" />
-
-    </div>
-</template>
+import { supabase } from "../supabase";
+console.log("supabase :", supabase); // pour vérifier et "garder" supabase dans le code
+const maisons = []; // à remplacer par l'appel à Supabase

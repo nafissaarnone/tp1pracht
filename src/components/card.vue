@@ -15,7 +15,7 @@ defineProps({
 
 </script>
 <template>
-    <figure class="m-20 w-90">
+    <figure class="m-20 w-90 max-w-24 ">
         <img class="w-full rounded-t-lg" v-bind:src="image" alt="" />
         <figcaption class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7">
             <h3 class="text-2xl text-gray-900">{{ nom }}</h3>

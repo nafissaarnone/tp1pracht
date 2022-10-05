@@ -1,24 +1,25 @@
 <script setup lang="ts">
 import Card from "../components/card.vue";
 
-const maison = {
-    nom: "maison untel",
-    prix: 5,
+const getmaison = await fetch("./maison.json");
 
-}
+const maison = await getmaison.json();
+
 
 </script>
 <template>
+    <div class="flex flex-row ">
+
+    
     <div>
-        <Card nom="maison1" :prix="800" image="maison4.jpeg" />
-        <Card v-bind:prix="maison.prix" />
+        <Card v-for="m in maison" :key="m" v-bind="m"></Card>
 
     </div>
     <div>
-        <Card nom="maison2" :prix="5" image="maison5.jpeg" />
-        <Card v-bind:prix="maison.prix" />
+        <Card v-for="m in maison" :key="m" v-bind="m"></Card>
 
 
 
+    </div>
     </div>
 </template>

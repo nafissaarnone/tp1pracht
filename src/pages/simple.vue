@@ -8,8 +8,8 @@ const maison = {
 }
 
 </script>
-<template>
-    <div>
+<template >
+    <div class="flex flex-row ">
         <Card nom="maison untel" :prix="5" image="maison-1.jpg" />
 
 

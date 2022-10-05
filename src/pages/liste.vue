@@ -9,6 +9,7 @@ const maison = {
 
 </script>
 <template>
+    <div class="flex flex-row ">
     <div>
         <Card nom="maison untel" :prix="800" image="maison6.jpeg" />
         <!--<Card v-bind:prix="maison.prix" />-->
@@ -23,5 +24,6 @@ const maison = {
         <Card nom="maison untel" :prix="5" image="maison8.jpeg" />
         <!--<Card v-bind:prix="maison.prix" />-->
 
+    </div>
     </div>
 </template>

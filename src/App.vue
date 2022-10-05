@@ -1,51 +1,60 @@
 <template>
-  <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
+  <nav class="bg-black p-5">
+    
+    <div class=" flex justify-center">
+
+    
+    <ul class="bg-pink-400 rounded-lg w-7/12 text-center">
       <li>
-        <router-link class="text-red-600 underline" to="/">
+        <router-link class=" underline" to="/">
           lien vers
           <code class="font-mono">/src/pages/index.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/simple">
+        <router-link class=" underline" to="/simple">
           lien vers
           <code class="font-mono">page simple</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/liste">
+        <router-link class=" underline" to="/liste">
           lien vers
           <code class="font-mono">page liste</code>
         </router-link>
 
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/listefech">
+        <router-link class=" underline" to="/listefech">
           lien vers
           <code class="font-mono">page liste fech</code>
         </router-link>
 
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/edit/new">
+        <router-link class=" underline" to="/edit/new">
           lien vers
           <code class="font-mono">page new.vue</code>
         </router-link>
 
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/list-supabase.vue">
+        <router-link class=" underline" to="/list-supabase.vue">
           lien vers
           <code class="font-mono">liste-supabase</code>
         </router-link>
 
       </li>
+
+      <li>
+        <router-link class=" underline" to="/connecter">
+          lien vers
+          <code class="font-mono">connexion</code>
+        </router-link>
+
+      </li>
     </ul>
+  </div>
   </nav>
 
   <!-- Affiche les pages -->
@@ -59,5 +68,5 @@
 </template>
 
 <script setup lang="ts">
-import { Bars3Icon } from '@heroicons/vue/20/solid'
+
 </script>
